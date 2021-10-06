@@ -16,5 +16,5 @@ bases:
 
 images:
 - name: messaging
-  newName: quay.io/manuela/iot-consumer
-  newTag: quickstart
+  newName: quay.io/luisarizmendi/iot-consumer
+  newTag: 0.3.2-35
