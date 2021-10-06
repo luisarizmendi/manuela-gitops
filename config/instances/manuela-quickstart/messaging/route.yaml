@@ -3,4 +3,4 @@ kind: Route
 metadata:
   name: messaging
 spec:
-  host: messaging-manuela-quickstart-messaging.apps-crc.testing
+  host: messaging-manuela-quickstart-messaging.apps.ocp.46.4.65.190.nip.io
