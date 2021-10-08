@@ -25,5 +25,5 @@ configMapGenerator:
 
 images:
 - name: machine-sensor
-  newName: image-registry.openshift-image-registry.svc:5000/iotdemo/iot-software-sensor
+  newName: quay.io/luisarizmendi/iot-software-sensor
   newTag: 0.3.1-18
