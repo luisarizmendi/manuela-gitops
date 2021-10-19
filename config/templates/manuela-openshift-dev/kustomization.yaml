@@ -1,0 +1,20 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+- infra
+
+- github.com/luisarizmendi/manuela-dev/iot-consumer/manifests?ref=master
+- github.com/luisarizmendi/manuela-dev/iot-frontend/manifests?ref=master
+- github.com/luisarizmendi/manuela-dev/iot-software-sensor/manifests?ref=master
+#- github.com/luisarizmendi/manuela-dev/iot-software-sensor-quarkus/manifests?ref=master
+- github.com/luisarizmendi/manuela-dev/iot-mqtt2kafka-integration/manifests?ref=master
+- github.com/luisarizmendi/manuela-dev/iot-kafka2S3-integration/manifests?ref=master
+
+# Open data hub is optional
+- github.com/luisarizmendi/manuela-dev/iot-anomaly-detection/manifests?ref=master
+
+# Monitoring is optional (really?)
+- github.com/luisarizmendi/manuela-dev/iot-monitoring/manifests?ref=master
+
+
